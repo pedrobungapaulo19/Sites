@@ -7,10 +7,28 @@
     <priority>1.0</priority>
   </url>
   
-   <url>
-    <loc>https://pedrobungapaulo19.github.io/Sites/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+  <url>
+    <loc>https://pedrobungapaulo19.github.io/Sites/sobre.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pedrobungapaulo19.github.io/Sites/servicos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pedrobungapaulo19.github.io/Sites/projectos.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pedrobungapaulo19.github.io/Sites/contacto.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>

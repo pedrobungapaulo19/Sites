@@ -1,0 +1,113 @@
+* {
+    margin: 1% 0,5% 0 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+    line-height: 1.6;
+  }
+
+  nav ul {
+    list-style: none;
+    justify-content: right;
+    display: flex;
+    gap: 2%;
+    font-size: 90%;
+  }
+
+  nav a{
+    text-decoration: none;
+    color: cornflowerblue; 
+  }
+
+  nav a:hover{
+    color: rgb(236, 24, 240);
+  }
+/* Para mexer imagens*/
+  .logo{
+    width: 25%;
+    height: 25%;
+    border-radius: 30%;
+    margin-left: 65%;
+    margin-top: 20%;
+  }
+
+.conteudo img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5%;
+  }
+/*fim ds configuração das imagrns*/
+/*para conteudo*/
+ .conteudo{
+    margin-top: -150px;
+    margin-left: 4%;
+    font-size: 100%;
+  }
+
+h2 {
+  color: white;
+  margin-bottom: 5px;
+}
+
+p {
+  color: gay;
+  margin: 2px 0;
+}
+
+.p2 {
+  color: cornflowerblue;
+}
+
+.navegar {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+    margin-left: 0;
+}
+
+.navegar a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão 1 - Saber Mais */
+.btn-sobre {
+  background-color: cornflowerblue; /* blue */
+}
+
+.btn-sobre:hover {
+  background-color: #218838;
+}
+
+/* Botão 2 - Contacto (transparente com texto branco e borda) */
+.btn-contacto {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-contacto:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* leve fundo no hover */
+  color: white;
+}
+
+a img {
+  filter: brightness(0) invert(1); /* transforma em branco */
+}
+a img:hover {
+  filter: none;
+}
+
+  .rodape{
+    margin-top: 33%;
+    text-align: center;
+  }
