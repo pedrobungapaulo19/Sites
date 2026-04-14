@@ -1,87 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="icon" type="image/jpg" href="logo.jpg">
+  <link rel="icon" type="image/jpg" href="logo.jpg">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="EIt4YuOqwLwlsQc-E1TEIdprIpqN1ljz1TF2fLl2-ps" />
   <meta name="google-site-verification" content="SB1VjGjs3XC-LfkxAIlgO_Qg1SkqpqnpTFLiY0XEqwE" />
-<meta name="google-adsense-account" content="ca-pub-2821256704139898">
-   <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2821256704139898"
-     crossorigin="anonymous"></script>
-   
-  <meta name="description" content="Elite of Developer - Grupo focado em desenvolvimento web e soluções tecnológicas." />
-  <meta name="keywords" content="Elite of Developer, desenvolvimento web, designer gráfico, design gráfico, panfletos, logotipo, flayer, programação, software de gestão, tecnologia" />
+  <meta name="google-adsense-account" content="ca-pub-2821256704139898">
+  <script async custom-element="amp-auto-ads" src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2821256704139898" crossorigin="anonymous"></script>
+  <meta name="description" content="Elite of Developer - Contacte-nos." />
   <meta name="author" content="Elite of Developer" />
-  <title>Elite of Developer | Contactos </title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Elite of Developer | Contacto</title>
+  <link rel="stylesheet" href="elite.css" />
   <style>
-      .link a {
-  color: cornflowerblue;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+    .contact-hub { max-width: 600px; margin: 0 auto; }
+    .contact-big-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .contact-top-bar {
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
+      padding: 2rem;
+    }
+    .contact-top-bar h2 {
+      font-family: var(--font-h);
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+    .contact-top-bar p { font-size: 0.9rem; color: rgba(255,255,255,0.8); }
+    .contact-body { padding: 1.6rem; display: flex; flex-direction: column; gap: 0.9rem; }
 
-.link a:hover {
-  color: #00c3ff;
-}
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.1rem;
+      background: var(--dark);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--white);
+      transition: all var(--transition);
+    }
+    .contact-row:hover {
+      border-color: var(--cyan);
+      transform: translateX(4px);
+      background: rgba(6,182,212,0.05);
+    }
+    .contact-row .cicon {
+      width: 42px; height: 42px;
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-row .cinfo { flex: 1; min-width: 0; }
+    .contact-row .clabel {
+      font-size: 0.7rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 2px;
+    }
+    .contact-row .cval {
+      font-size: 0.9rem; font-weight: 500;
+      color: var(--white);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .contact-row .arrow { font-size: 0.95rem; color: var(--muted); flex-shrink: 0; transition: color var(--transition); }
+    .contact-row:hover .arrow { color: var(--cyan); }
 
+    @media (max-width: 640px) {
+      .contact-top-bar { padding: 1.5rem 1.2rem; }
+      .contact-top-bar h2 { font-size: 1.2rem; }
+      .contact-body { padding: 1.1rem; gap: 0.75rem; }
+      .contact-row { padding: 0.8rem 0.9rem; gap: 0.75rem; }
+      .contact-row .cicon { width: 36px; height: 36px; font-size: 1rem; }
+      .contact-row .cval { font-size: 0.82rem; }
+    }
   </style>
 </head>
 <body>
-   <amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-7169734779923773">
-</amp-auto-ads>
-<header>
-    <!--google adsense para anúcios no site-->
-    <div class="logo-container">
-  <img src="logo.jpg" alt="Logotipo Elite" class="logo">
-  <h1>Elite of Developer</h1>
-</div>
-  <nav>
-    <ul>
+  <amp-auto-ads type="adsense" data-ad-client="ca-pub-7169734779923773"></amp-auto-ads>
+
+  <nav class="topnav">
+    <a href="index.html" class="nav-brand">
+      <img src="logo.jpg" alt="Elite Logo">
+      <span>Elite <em>of Developer</em></span>
+    </a>
+    <ul class="nav-links">
       <li><a href="index.html">Início</a></li>
       <li><a href="sobre.html">Sobre</a></li>
       <li><a href="servicos.html">Serviços</a></li>
-      <li><a href="#contacto">Contato</a></li>
+      <li><a href="projectos.html">Projectos</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
     </ul>
+    <a href="mailto:eliteofdeveloper@gmail.com" class="nav-cta">E-mail</a>
   </nav>
-</header>
-<!--Conteúdo da página-->
 
+  <div class="page-wrapper">
+    <div class="page-header">
+      <span class="tag">Fale connosco</span>
+      <h1>Contacto</h1>
+      <p>Escolha o canal que preferir — respondemos em menos de 24 horas.</p>
+    </div>
 
-<section id="sobre" class="section">
-   
-    <h4>Nossa missão</h4> 
-    <p>Fornecer soluções tecnológicas de alta qualidade que impulsionem o crescimento dos nossos parceiros.</p>
-    <br>
-    <h4>Nossa visão</h4> 
-    <p>Ser referência em inovação e qualidade no desenvolvimento de sistemas e serviços digitais.</p>
-      <br>
-      <p>E-mail: eliteofdevoloper@gmail.com</p>
-      <p>Contactos: 941442230-959619673</p>
-  </section>
+    <div class="contact-hub">
+      <div class="contact-big-card">
+        <div class="contact-top-bar">
+          <h2>Entre em contacto</h2>
+          <p>Projecto, dúvida ou orçamento — estamos prontos.</p>
+        </div>
+        <div class="contact-body">
 
+          <a href="mailto:eliteofdeveloper@gmail.com" class="contact-row">
+            <div class="cicon" style="background:rgba(37,99,235,0.15);border:1px solid rgba(37,99,235,0.25)">✉️</div>
+            <div class="cinfo">
+              <div class="clabel">E-mail</div>
+              <div class="cval">eliteofdeveloper@gmail.com</div>
+            </div>
+            <div class="arrow">→</div>
+          </a>
 
-  <section id="contato" class="section">
-    <h2>Deixe Seu Contato</h2>
-    <p>Tem alguma dúvida ou quer contratar nossos serviços? Mande mensagem no e-mail, clique no e-mail abaixo.</p>
- <div class="link">
-     <a href="mailto: pedrobungapaulo2023@gmail.com">E-mail: pedrobungapaulo2023@gmail.com</a>
- </div>
+          <a href="tel:+244941442230" class="contact-row">
+            <div class="cicon" style="background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.2)">📞</div>
+            <div class="cinfo">
+              <div class="clabel">Telefone</div>
+              <div class="cval">941 442 230</div>
+            </div>
+            <div class="arrow">→</div>
+          </a>
 
-  </section>
+          <a href="tel:+244959619673" class="contact-row">
+            <div class="cicon" style="background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.2)">📱</div>
+            <div class="cinfo">
+              <div class="clabel">Telefone 2</div>
+              <div class="cval">959 619 673</div>
+            </div>
+            <div class="arrow">→</div>
+          </a>
+
+          <a href="https://www.facebook.com/Pedrobungapaulo19" target="_blank" class="contact-row">
+            <div class="cicon" style="background:rgba(24,119,242,0.15);border:1px solid rgba(24,119,242,0.25)">🔵</div>
+            <div class="cinfo">
+              <div class="clabel">Facebook</div>
+              <div class="cval">Pedro Bunga Paulo</div>
+            </div>
+            <div class="arrow">↗</div>
+          </a>
+
+          <a href="https://www.instagram.com/eliteofdevoloper?igsh=MTQ1NnNmcXF6Njludw==" target="_blank" class="contact-row">
+            <div class="cicon" style="background:rgba(225,48,108,0.12);border:1px solid rgba(225,48,108,0.2)">🟣</div>
+            <div class="cinfo">
+              <div class="clabel">Instagram</div>
+              <div class="cval">@eliteofdevoloper</div>
+            </div>
+            <div class="arrow">↗</div>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="mission-block" style="margin-top:1.2rem">
+        <h4>📍 Localização</h4>
+        <p>Angola — atendemos clientes em todo o país e internacionalmente.</p>
+      </div>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2025 Elite of Developer - Todos os direitos reservados</p>
-     <nav class="privacidades">
-      <p><a href="privacidade.html">Termos de Privacidades</a></p>
-    </nav>
+    <div class="footer-brand">Elite <span>of Developer</span></div>
+    <ul class="footer-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="privacidade.html">Privacidade</a></li>
+    </ul>
+    <div class="footer-copy">&copy; 2025 Elite of Developer — Todos os direitos reservados</div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
